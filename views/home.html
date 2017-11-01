@@ -24,5 +24,9 @@
             <a data-ng-click="delete(k,'items')" class="secondary-content"><i class="material-icons">&#xE872;</i></a>
 
         </li>
+
+        <li class="collection-item" data-ng-if="items.length==0 || !items.length">
+            Sin items
+        </li>
     </ul>
 </div>
