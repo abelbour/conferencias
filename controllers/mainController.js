@@ -1,45 +1,79 @@
 /**
  * Created by Gabriel on 02/11/2017.
  */
-app.controller("mainCtrl", function ($rootScope,$location,$http) {
+app.controller("mainCtrl", function ($rootScope,$location,$http,$cookies) {
 
-    $http.get("/conferencias/lang/es.json").then(
-        function (res) {
-          $rootScope.lang=res.data;
-        }
-    );
+    $rootScope.error=function (e) {
+        console.log(e);
+    }
 
 
-    $rootScope.checkLogin=function () {
 
-        //Realizo el checkeo de autenticacion
-        if($rootScope.user)
-        {
+    $rootScope.verifyGoogleToken=function(tk,callback) {
 
-            return $rootScope.user;
-        }
-        else
-        {
-            return false;
-        }
+        $http.get("https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+tk).then(
+            function (res) {
+
+
+                if(res.data.error_description)
+                {
+
+                    return callback(false);
+                }
+                else
+                {
+                   return callback({name:res.data.given_name,surname:res.data.family_name,idtoken:tk,picture:res.data.picture,type:"gp"})
+                }
+
+            },
+            function (e) {
+
+                $rootScope.error(e);
+                return callback(false);
+            }
+        );
+
 
 
     }
+
+    $rootScope.logout=function () {
+
+        $cookies.remove("tk");
+        $location.path('/login');
+
+    }
+
+    $rootScope.verifyLogin=function (callback) {
+
+        var token=($cookies.get("tk"))?$cookies.get("tk"):"";
+
+        $rootScope.verifyGoogleToken(token,function (result) {
+
+            $rootScope.user=result;
+
+            callback(result);
+
+        })
+    }
+
     $rootScope.$on('$routeChangeStart', function (event) {
 
 
+        $rootScope.verifyLogin(function (result) {
+            if($location.path()!="/login" && !result)
+            {
 
-        if ( $location.path()!="/login" &&!$rootScope.checkLogin()) {
+                return  $location.path('/login');
+            }
+            else if($location.path()=="/login" && result)
+            {
 
-            //Si no estoy logueado, voy al login
-            event.preventDefault();
-            $location.path('/login');
-        }
+                return $location.path('/');
+            }
 
-        else if($location.path()=="/login" && $rootScope.checkLogin()) {
-            //Si estoy logueado e intento entrar al login, voy al home
-            event.preventDefault();
-            $location.path('/');
-        }
+        });
+
+
     });
 });

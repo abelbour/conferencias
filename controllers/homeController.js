@@ -22,4 +22,5 @@ app.controller("homeCtrl", function ($rootScope,$location) {
 
         $rootScope[list].splice(k,1);
     }
+
 });

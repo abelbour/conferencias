@@ -1,7 +1,7 @@
 /**
  * Created by Gabriel on 02/11/2017.
  */
-app.controller("loginCtrl", function ($rootScope,$location) {
+app.controller("loginCtrl", function ($rootScope,$location,$cookies) {
 
     $.getScript("https://apis.google.com/js/api:client.js", function(data, textStatus, jqxhr) {
 
@@ -19,27 +19,43 @@ app.controller("loginCtrl", function ($rootScope,$location) {
 
         function attachSignin(element) {
 
-            auth2.attachClickHandler(element, {},
-                function (googleUser) {
+            if(element)
+            {
+                auth2.attachClickHandler(element, {},
+                    function (googleUser) {
 
-                    signInGoogle(googleUser);
+                        signInGoogle(googleUser);
 
-                }, function (error) {
-                    alert(JSON.stringify(error, undefined, 2));
-                });
+                    }, function (error) {
+                        alert(JSON.stringify(error, undefined, 2));
+                    });
+            }
+
         }
 
 
-        //TODO verificar el token en el backend
         function signInGoogle(googleUser) {
-            var profile = googleUser.getBasicProfile();
+
             var id_token = googleUser.getAuthResponse().id_token;
 
-          $rootScope.user={name:profile.getGivenName(),surname:profile.getEmail(),idtoken:id_token,surname:profile["wea"]};
 
-          $location.path('/');
+            $rootScope.verifyGoogleToken(id_token,function (result) {
 
-          $rootScope.$apply();
+
+                if(result)
+                {
+                    $rootScope.user=result;
+
+                    $location.path('/');
+
+                    $cookies.put("tk",id_token);
+
+
+                }
+
+            });
+
+
 
 
         }
