@@ -1,7 +1,7 @@
 /**
  * Created by Puers on 01/11/2017.
  */
-app.controller("homeCtrl", function ($rootScope) {
+app.controller("homeCtrl", function ($rootScope,$location) {
 
     $rootScope.add=function (item,list) {
 

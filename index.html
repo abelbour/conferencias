@@ -24,14 +24,22 @@
                 .when("/", {
                     templateUrl : "views/home.html",
                     controller : "homeCtrl"
-                });
+                })
+               .when("/login", {
+                templateUrl : "views/login.html",
+                controller : "loginCtrl"
+            });
         });
+
     </script>
     <!--- Controladores --->
+
+    <script src="controllers/mainController.js"></script>
     <script src="controllers/homeController.js"></script>
+    <script src="controllers/loginController.js"></script>
     <!-- -->
 </head>
-<body data-ng-app="app">
+<body data-ng-app="app" data-ng-controller="mainCtrl">
 
 <section data-ng-view>
 
