@@ -3,40 +3,30 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
+    <title>Arreglos de discursos públicos</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body>
-<nav class="black lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Arreglos de conferencias</a>
+<body class="brown lighten-5">
+<nav class="blue-grey darken-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Discursos públicos</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
-            </a></li>
-            <li><a href="#">Discursantes</a></li>
+            <li class="active"><a href="#"><i class="material-icons left">home</i>Inicio</a></li>
+            <li><a href="#"><i class="material-icons left">event</i>Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
+            <li><a href="#"><i class="material-icons left">recent_actors</i>Discursantes</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
-            </a></li>
-            <li><a href="#">Discursantes</a></li>
+            <li class="active"><a href="#"><i class="material-icons left">home</i>Inicio</a></li>
+            <li><a href="#"><i class="material-icons left">event</i>Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
+            <li><a href="#"><i class="material-icons left">recent_actors</i>Discursantes</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
-<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-
-        <h5>Circuito Entre Ríos 2</h5>
-        <h3 class="black-text-text">Sistema de arreglos de conferencia</h3>
-
-    </div>
-</div>
 
 
 <div class="container">
@@ -60,7 +50,7 @@
                             <th>Fecha</th>
                             <th>Discursante</th>
                             <th>Congregación</th>
-                            <th></th>
+                            <th>Contacto</th>
                         </tr>
                         </thead>
 
@@ -91,7 +81,43 @@
                     <br><br>
 
                 </div>
-                <div id="salen">Test 2</div>
+                <div id="salen">
+                    <table class="responsive-table striped">
+                        <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Discursante</th>
+                            <th>Congregación</th>
+                            <th>Contacto</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>5 de mayo</td>
+                            <td>Abel Bourband</td>
+                            <td>Churruarín</td>
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12 de mayo</td>
+                            <td>Mario Astrada</td>
+                            <td>Parque</td>
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19 de mayo</td>
+                            <td>Pablo Paunero</td>
+                            <td>Santa Elena</td>
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                </div>
 
             </div>
             <div class="card-action">
@@ -120,7 +146,7 @@
                             <th>Fecha</th>
                             <th>Discursante</th>
                             <th>Congregación</th>
-                            <th></th>
+                            <th>Contacto</th>
                         </tr>
                         </thead>
 
@@ -136,7 +162,42 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="confsalen">Test 2</div>
+                <div id="confsalen">
+                    <p>Por favor, confirme los siguientes arreglos que fueron pedidos a su congregación.</p>
+                    <table class="responsive-table striped">
+                        <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Discursante</th>
+                            <th>Congregación</th>
+                            <th>Contacto</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>5 de julio</td>
+                            <td>Abel Bourband</td>
+                            <td>Churruarín</td>
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                            </td>
+                            <td>
+                                <a class="waves-effect waves-light btn"><i class="material-icons left">check</i>Confirmar</a>
+                                <!-- Dropdown Trigger -->
+                                <a class='dropdown-button btn' href='#' data-activates='dropdown1'><i class="material-icons left">cancel</i>Rechazar</a>
+
+                                <!-- Dropdown Structure -->
+                                <ul id='dropdown1' class='dropdown-content'>
+                                    <li><a href="#!">Cancelar definitivamente</a></li>
+                                    <li><a href="#!">Reprogramar para otra fecha</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
         </div>
@@ -147,12 +208,12 @@
 <!-- Modal Structure -->
 <div id="contacto1" class="modal bottom-sheet">
     <div class="row">
-        <div class="col s4 m5">
+        <div class="col s12 m5">
             <div class="modal-content">
                 <h4>Discursante</h4>
-                <div class="card-panel">
+                <div class="card-panel brown lighten-5">
           <span><h5>Abel Bourband</h5>
-            <ul><li>Teléfono: 0343 4363376</li>
+            <ul>
             <li>Teléfono: 0343 4363376</li>
               <li>Celular: 0343 4363376</li>
               <li>Email: 0343 4363376</li>
@@ -160,9 +221,18 @@
           </span>
                 </div>
                 <h4>Arreglos</h4>
-                <div class="card-panel">
+                <div class="card-panel brown lighten-5">
           <span><h5>Abel Bourband</h5>
-            <ul><li>Teléfono: 0343 4363376</li>
+            <ul>
+            <li>Teléfono: 0343 4363376</li>
+              <li>Celular: 0343 4363376</li>
+              <li>Email: 0343 4363376</li>
+            </ul>
+          </span>
+                </div>
+                <div class="card-panel brown lighten-5">
+          <span><h5>Abel Bourband</h5>
+            <ul>
             <li>Teléfono: 0343 4363376</li>
               <li>Celular: 0343 4363376</li>
               <li>Email: 0343 4363376</li>
