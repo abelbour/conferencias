@@ -11,29 +11,27 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+  <nav class="black lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Arreglos de conferencias</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li></a></li>
+        <li><a href="#">Discursantes</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li></a></li>
+        <li><a href="#">Discursantes</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
+
+      <h5>Circuito Entre Ríos 2</h5>
+      <h3 class="black-text-text">Sistema de arreglos de conferencia</h3>
 
     </div>
   </div>
@@ -41,34 +39,78 @@
 
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+      <div class="card">
+        <div class="card-content">
+          <h4>Próximos arreglos</h4>
         </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a class="active" href="#entran">Entran</a></li>
+            <li class="tab"><a href="#salen">Salen</a></li>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
+          </ul>
         </div>
+        <div class="card-content white lighten-4">
+          <div id="entran">
+            <table class="responsive-table striped">
+              <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Discursante</th>
+                <th>Congregación</th>
+                <th></th>
+              </tr>
+              </thead>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+              <tbody>
+              <tr>
+                <td>5 de mayo</td>
+                <td>Abel Bourband</td>
+                <td>Churruarín</td>
+                <td>
+                  <a class="waves-effect waves-teal btn-flat"><i class="material-icons right">contact_phone</i>Contacto</a>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>12 de mayo</td>
+                <td>Mario Astrada</td>
+                <td>Parque</td>
+                <td><a class="waves-effect waves-teal btn-flat"><i class="material-icons right">contact_phone</i>Contacto</a></td>
+              </tr>
+              <tr>
+                <td>19 de mayo</td>
+                <td>Pablo Paunero</td>
+                <td>Santa Elena</td>
+                <td><a class="waves-effect waves-teal btn-flat"><i class="material-icons right">contact_phone</i>Contacto</a></td>
+              </tr>
+              </tbody>
+            </table>
+            <br><br>
+            <h5>A confirmar</h5>
+            <table class="responsive-table striped">
+              <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Discursante</th>
+                <th>Congregación</th>
+                <th></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <tr>
+                <td>5 de julio</td>
+                <td>Abel Bourband</td>
+                <td>Churruarín</td>
+                <td><a class="waves-effect waves-teal btn-flat"><i class="material-icons right">contact_phone</i>Contacto</a></td>
+              </tr>
+
+              </tbody>
+            </table>
           </div>
+          <div id="salen">Test 2</div>
+
         </div>
       </div>
 
@@ -76,41 +118,6 @@
     <br><br>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
 
 
   <!--  Scripts-->
