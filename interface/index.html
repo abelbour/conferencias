@@ -14,15 +14,15 @@
 <nav class="blue-grey darken-3" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Discursos públicos</a>
         <ul class="right hide-on-med-and-down">
-            <li class="active"><a href="#"><i class="material-icons left">home</i>Inicio</a></li>
-            <li><a href="#"><i class="material-icons left">event</i>Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
-            <li><a href="#"><i class="material-icons left">recent_actors</i>Discursantes</a></li>
+            <li class="active"><a href="index.html"><i class="material-icons left">home</i>Inicio</a></li>
+            <li><a href="arreglos.html"><i class="material-icons left">event</i>Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
+            <li><a href="discursantes.html"><i class="material-icons left">recent_actors</i>Discursantes</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li class="active"><a href="#"><i class="material-icons left">home</i>Inicio</a></li>
-            <li><a href="#"><i class="material-icons left">event</i>Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
-            <li><a href="#"><i class="material-icons left">recent_actors</i>Discursantes</a></li>
+            <li class="active"><a href="index.html"><i class="material-icons left">home</i>Inicio</a></li>
+            <li><a href="arreglos.html"><i class="material-icons left">event</i>Arreglos<span class="new badge red" data-badge-caption="nuevo">1</span></a></li>
+            <li><a href="discursantes.html"><i class="material-icons left">recent_actors</i>Discursantes</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -35,18 +35,85 @@
             <div class="card-content">
                 <h4>Próximos arreglos</h4>
             </div>
-            <div class="card-tabs">
+            <div class="card-tabs black-text">
                 <ul class="tabs">
-                    <li class="tab"><a class="active" href="#entran">Entran</a></li>
-                    <li class="tab"><a href="#salen">Salen</a></li>
+                    <li class="tab"><a class="active" href="#todos">Todos</a></li>
+                    <li class="tab"><a href="#entran">Entrantes</a></li>
+                    <li class="tab"><a href="#salen">Salientes</a></li>
 
                 </ul>
             </div>
-            <div class="card-content white lighten-4">
-                <div id="entran">
+            <div id="todos" class="card-content">
+                <table class="responsive-table striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Fecha</th>
+                        <th>Discursante</th>
+                        <th>Congregación</th>
+                        <th>Contacto</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><i class="material-icons cyan-text darken-4">call_received</i></td>
+                        <td>5 de mayo</td>
+                        <td>Abel Bourband</td>
+                        <td>Churruarín</td>
+                        <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons cyan-text darken-4">call_received</i></td>
+                        <td>12 de mayo</td>
+                        <td>Mario Astrada</td>
+                        <td>Parque</td>
+                        <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons cyan-text darken-4">call_received</i></td>
+                        <td>19 de mayo</td>
+                        <td>Pablo Paunero</td>
+                        <td>Santa Elena</td>
+                        <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons orange-text darken-4">call_made</i></td>
+                        <td>5 de mayo</td>
+                        <td>Abel Bourband</td>
+                        <td>Churruarín</td>
+                        <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons orange-text darken-4">call_made</i></td>
+                        <td>12 de mayo</td>
+                        <td>Mario Astrada</td>
+                        <td>Parque</td>
+                        <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons orange-text darken-4">call_made</i></td>
+                        <td>19 de mayo</td>
+                        <td>Pablo Paunero</td>
+                        <td>Santa Elena</td>
+                        <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br><br>
+
+            </div>
+                <div id="entran" class="card-content">
                     <table class="responsive-table striped">
                         <thead>
                         <tr>
+                            <th></th>
                             <th>Fecha</th>
                             <th>Discursante</th>
                             <th>Congregación</th>
@@ -56,6 +123,7 @@
 
                         <tbody>
                         <tr>
+                            <td><i class="material-icons cyan-text darken-4">call_received</i></td>
                             <td>5 de mayo</td>
                             <td>Abel Bourband</td>
                             <td>Churruarín</td>
@@ -63,6 +131,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td><i class="material-icons cyan-text darken-4">call_received</i></td>
                             <td>12 de mayo</td>
                             <td>Mario Astrada</td>
                             <td>Parque</td>
@@ -70,6 +139,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td><i class="material-icons cyan-text darken-4">call_received</i></td>
                             <td>19 de mayo</td>
                             <td>Pablo Paunero</td>
                             <td>Santa Elena</td>
@@ -81,10 +151,11 @@
                     <br><br>
 
                 </div>
-                <div id="salen">
+                <div id="salen" class="card-content">
                     <table class="responsive-table striped">
                         <thead>
                         <tr>
+                            <th></th>
                             <th>Fecha</th>
                             <th>Discursante</th>
                             <th>Congregación</th>
@@ -94,6 +165,7 @@
 
                         <tbody>
                         <tr>
+                            <td><i class="material-icons orange-text darken-4">call_made</i></td>
                             <td>5 de mayo</td>
                             <td>Abel Bourband</td>
                             <td>Churruarín</td>
@@ -101,6 +173,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td><i class="material-icons orange-text darken-4">call_made</i></td>
                             <td>12 de mayo</td>
                             <td>Mario Astrada</td>
                             <td>Parque</td>
@@ -108,6 +181,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td><i class="material-icons orange-text darken-4">call_made</i></td>
                             <td>19 de mayo</td>
                             <td>Pablo Paunero</td>
                             <td>Santa Elena</td>
@@ -117,11 +191,11 @@
                         </tbody>
                     </table>
                     <br><br>
-                </div>
+
 
             </div>
             <div class="card-action">
-                <a href="#">Ver todos</a>
+                <a href="#">Ver agenda completa</a>
                 <a href="#">Nuevo arreglo</a>
             </div>
         </div>
@@ -132,17 +206,59 @@
             </div>
             <div class="card-tabs">
                 <ul class="tabs">
-                    <li class="tab"><a class="active" href="#confentran">Entran</a></li>
-                    <li class="tab"><a href="#confsalen">Salen</a></li>
+                    <li class="tab"><a class="active" href="#conftodos">Todos</a></li>
+                    <li class="tab"><a href="#confentran">Entrantes</a></li>
+                    <li class="tab"><a href="#confsalen">Salientes</a></li>
 
                 </ul>
             </div>
             <div class="card-content white lighten-4">
+                <div id="conftodos">
+                    <p>Los siguientes arreglos aún no han sido confirmados.</p>
+                    <table class="responsive-table striped">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Fecha</th>
+                            <th>Discursante</th>
+                            <th>Congregación</th>
+                            <th>Contacto</th>
+                            <th>Acciones</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td><i class="material-icons cyan-text darken-4">call_received</i><i class="material-icons cyan-text darken-4">priority_high</i></td>
+                            <td>5 de julio</td>
+                            <td>Abel Bourband</td>
+                            <td>Churruarín</td>
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons orange-text darken-4">call_made</i><i class="material-icons orange-text darken-4">priority_high</i></td>
+                            <td>5 de julio</td>
+                            <td>Abel Bourband</td>
+                            <td>Churruarín</td>
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
+                            </td>
+
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">check</i></a>
+                                <a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">clear</i></a>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div id="confentran">
                     <p>Los siguientes arreglos aún no han sido confirmados por la congregación de origen.</p>
                     <table class="responsive-table striped">
                         <thead>
                         <tr>
+                            <th></th>
                             <th>Fecha</th>
                             <th>Discursante</th>
                             <th>Congregación</th>
@@ -152,6 +268,7 @@
 
                         <tbody>
                         <tr>
+                            <td><i class="material-icons cyan-text darken-4">call_received</i><i class="material-icons cyan-text darken-4">priority_high</i></td>
                             <td>5 de julio</td>
                             <td>Abel Bourband</td>
                             <td>Churruarín</td>
@@ -167,31 +284,27 @@
                     <table class="responsive-table striped">
                         <thead>
                         <tr>
+                            <th></th>
                             <th>Fecha</th>
                             <th>Discursante</th>
                             <th>Congregación</th>
                             <th>Contacto</th>
-                            <th></th>
+                            <th>Acciones</th>
                         </tr>
                         </thead>
 
                         <tbody>
                         <tr>
+                            <td><i class="material-icons orange-text darken-4">call_made</i><i class="material-icons orange-text darken-4">priority_high</i></td>
                             <td>5 de julio</td>
                             <td>Abel Bourband</td>
                             <td>Churruarín</td>
                             <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">contact_phone</i></a>
                             </td>
                             <td>
-                                <a class="waves-effect waves-light btn"><i class="material-icons left">check</i>Confirmar</a>
-                                <!-- Dropdown Trigger -->
-                                <a class='dropdown-button btn' href='#' data-activates='dropdown1'><i class="material-icons left">cancel</i>Rechazar</a>
+                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">check</i></a>
+                                <a class="waves-effect waves-teal btn-flat modal-trigger" href="#contacto1"><i class="material-icons">clear</i></a>
 
-                                <!-- Dropdown Structure -->
-                                <ul id='dropdown1' class='dropdown-content'>
-                                    <li><a href="#!">Cancelar definitivamente</a></li>
-                                    <li><a href="#!">Reprogramar para otra fecha</a></li>
-                                </ul>
                             </td>
                         </tr>
 
@@ -212,33 +325,35 @@
             <div class="modal-content">
                 <h4>Discursante</h4>
                 <div class="card-panel brown lighten-5">
-          <span><h5>Abel Bourband</h5>
-            <ul>
-            <li>Teléfono: 0343 4363376</li>
-              <li>Celular: 0343 4363376</li>
-              <li>Email: 0343 4363376</li>
-            </ul>
-          </span>
+                    <h5>Abel Bourband</h5>
+                    <p>Co. Churruarín</p>
+                    <ul>
+                        <li><i class="material-icons tiny left">local_phone</i>0343 4363376</li>
+                        <li><i class="material-icons tiny left">smartphone</i>0343 4363376</li>
+                        <li><i class="material-icons tiny left">mail</i>abelbour@australsp.com</li>
+                    </ul>
                 </div>
                 <h4>Arreglos</h4>
                 <div class="card-panel brown lighten-5">
-          <span><h5>Abel Bourband</h5>
-            <ul>
-            <li>Teléfono: 0343 4363376</li>
-              <li>Celular: 0343 4363376</li>
-              <li>Email: 0343 4363376</li>
-            </ul>
-          </span>
+                    <h5>Abel Bourband</h5>
+                    <p>Co. Churruarín</p>
+                    <ul>
+                        <li><i class="material-icons tiny left">local_phone</i>0343 4363376</li>
+                        <li><i class="material-icons tiny left">smartphone</i>0343 4363376</li>
+                        <li><i class="material-icons tiny left">mail</i>abelbour@australsp.com</li>
+                    </ul>
                 </div>
+
                 <div class="card-panel brown lighten-5">
-          <span><h5>Abel Bourband</h5>
-            <ul>
-            <li>Teléfono: 0343 4363376</li>
-              <li>Celular: 0343 4363376</li>
-              <li>Email: 0343 4363376</li>
-            </ul>
-          </span>
+                    <h5>Abel Bourband</h5>
+                    <p>Co. Churruarín</p>
+                    <ul>
+                        <li><i class="material-icons tiny left">local_phone</i>0343 4363376</li>
+                        <li><i class="material-icons tiny left">smartphone</i>0343 4363376</li>
+                        <li><i class="material-icons tiny left">mail</i>abelbour@australsp.com</li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </div>
