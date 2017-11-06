@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Conferencias</title>
+    <title>Arreglos de discursos públicos</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link rel="stylesheet" href="styles/stacktable.css">
 
 
     <!--Let browser know website is optimized for mobile-->
@@ -18,7 +20,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
     <script src="//code.angularjs.org/1.6.5/angular-cookies.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+    <script src="lib/stacktable.js"></script>
     <script>
+
+        $(document).ready(
+            function () {
+                $('.button-collapse').sideNav();
+                $('.modal').modal();
+
+
+            }
+        );
         var app = angular.module("app", ["ngRoute",'ngCookies']);
         app.config(function($routeProvider) {
             $routeProvider
@@ -39,10 +52,16 @@
     <script src="controllers/homeController.js"></script>
     <script src="controllers/loginController.js"></script>
     <!-- -->
-</head>
-<body data-ng-app="app" data-ng-controller="mainCtrl">
 
-<section data-ng-view>
+    <!-- Directivas -->
+    <script src="directives/element.js"></script>
+    <!--- --->
+</head>
+<body class="brown lighten-5" data-ng-app="app" data-ng-controller="mainCtrl">
+
+<nav class="blue-grey darken-3" role="navigation" data-ng-include="'views/navbar.html'"></nav>
+
+<section data-ng-view >
 
 </section>
 
