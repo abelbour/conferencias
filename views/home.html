@@ -21,69 +21,20 @@
 
                 <div id="conftodos">
 
-                    <element template="views/arreglos.html" bind="arreglos.noConfirmados"></element>
-
+                    <div data-ng-repeat="data in conftodos"     data-ng-include="'views/elements/arreglos.html'"></div>
 
                 </div>
 
                 <div id="confentran">
-                    <p>Los siguientes arreglos aún no han sido confirmados por la congregación de origen.</p>
-                    <table class="responsive-table striped">
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>Fecha</th>
-                            <th>Discursante</th>
-                            <th>Congregación</th>
-                            <th>Detalles</th>
-                        </tr>
-                        </thead>
+                    <p >Los siguientes arreglos aún no han sido confirmados por la congregación de origen.</p>
 
-                        <tbody>
-                        <tr>
-                            <td><i class="material-icons cyan-text darken-4">call_received</i><i
-                                    class="material-icons cyan-text darken-4">priority_high</i></td>
-                            <td>5 de julio</td>
-                            <td>Abel Bourband</td>
-                            <td>Churruarín</td>
-                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#modal_confirmar_entrante"><i
-                                    class="material-icons">more_horiz</i></a>
-                            </td>
-                        </tr>
-
-                        </tbody>
-                    </table>
                 </div>
 
                 <div id="confsalen">
                     <p>Por favor, confirme los siguientes arreglos que fueron pedidos a su congregación.</p>
-                    <table class="responsive-table striped">
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>Fecha</th>
-                            <th>Discursante</th>
-                            <th>Congregación</th>
-                            <th>Detalles</th>
-                        </tr>
-                        </thead>
-
-                        <tbody>
-                        <tr>
-                            <td><i class="material-icons orange-text darken-4">call_made</i><i
-                                    class="material-icons orange-text darken-4">priority_high</i></td>
-                            <td>5 de julio</td>
-                            <td>Abel Bourband</td>
-                            <td>Churruarín</td>
-                            <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#modal_confirmar_saliente"><i
-                                    class="material-icons">more_horiz</i></a>
-                            </td>
 
 
-                        </tr>
 
-                        </tbody>
-                    </table>
                 </div>
 
             </div>
@@ -93,3 +44,7 @@
 </div>
 
 
+<div class="custom-modal" data-ng-if="arreglo" data-ng-include="'views/elements/detalle-arreglo.html'" data-ng-repeat="data in [arreglo]" data-ng-style="{display: (arreglo)?'flex':'none'}">
+    <!-- Modal Structure -->
+
+</div>

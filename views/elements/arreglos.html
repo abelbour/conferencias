@@ -7,9 +7,8 @@
     );
 </script>
 
-<p>{{bind.texto}}</p>
 
-<table class=" striped cardtable">
+<table  class=" striped cardtable" >
 
     <thead>
     <tr>
@@ -23,7 +22,7 @@
     </thead>
     <tbody>
 
-    <tr data-ng-repeat="(k,v) in bind.lista">
+    <tr data-ng-repeat="(k,v) in data.list | filter:data.filter">
 
         <td data-ng-if="v.tipo == 'entra'"><i class="material-icons cyan-text darken-4">call_received</i><i data-ng-if="v.prioridad == 'alta'" class="material-icons cyan-text darken-4">priority_high</i></td>
         <td data-ng-if="v.tipo == 'sale'"><i class="material-icons orange-text darken-4">call_made</i><i data-ng-if="v.prioridad == 'alta'" class="material-icons orange-text darken-4">priority_high</i></td>
@@ -33,7 +32,7 @@
         <td>{{v.fecha}}</td>
         <td>{{v.discursante}}</td>
         <td>{{v.congregacion}}</td>
-        <td><a class="waves-effect waves-teal btn-flat modal-trigger" href="#modal_confirmar_entrante"><i
+        <td><a  data-ng-click="mostrarDetallesArreglo(v.id)" class="waves-effect waves-teal btn-flat modal-trigger"><i
                 class="material-icons">more_horiz</i></a>
         </td>
 

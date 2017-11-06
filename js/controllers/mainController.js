@@ -73,6 +73,10 @@ app.controller("mainCtrl", function ($rootScope,$location,$http,$cookies) {
                 return $location.path('/');
             }
 
+            $(".nav-wrapper li").removeClass("active");
+
+          $(".nav-wrapper a[href='#!"+$location.path()+"']").closest("li").addClass("active");
+
         });
 
 
