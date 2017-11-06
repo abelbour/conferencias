@@ -57,6 +57,7 @@ app.controller("mainCtrl", function ($rootScope,$location,$http,$cookies) {
         })
     }
 
+    scope=$rootScope;
     $rootScope.$on('$routeChangeStart', function (event) {
 
 
@@ -73,6 +74,7 @@ app.controller("mainCtrl", function ($rootScope,$location,$http,$cookies) {
             }
 
         });
+
 
 
     });
