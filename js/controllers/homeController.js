@@ -42,5 +42,9 @@ app.controller("homeCtrl", function ($rootScope,$location) {
     };
 
     $rootScope.conftodos=[{'list':$rootScope.arreglos,'filter':{'confirmado':false}}];
+    $rootScope.confentran=[{'list':$rootScope.arreglos,'filter':{'confirmado':false,'tipo':'entra'}}];
+    $rootScope.confsalen=[{'list':$rootScope.arreglos,'filter':{'confirmado':false,'tipo':'sale'}}];
+
+
 
 });

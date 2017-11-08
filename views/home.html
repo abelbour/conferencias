@@ -28,11 +28,14 @@
                 <div id="confentran">
                     <p >Los siguientes arreglos aún no han sido confirmados por la congregación de origen.</p>
 
+                    <div data-ng-repeat="data in confentran"     data-ng-include="'views/elements/arreglos.html'"></div>
+
                 </div>
 
                 <div id="confsalen">
                     <p>Por favor, confirme los siguientes arreglos que fueron pedidos a su congregación.</p>
 
+                    <div data-ng-repeat="data in confsalen"     data-ng-include="'views/elements/arreglos.html'"></div>
 
 
                 </div>
