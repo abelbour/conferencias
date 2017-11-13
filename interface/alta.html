@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Arreglos de discursos públicos</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="brown lighten-5">
+
+
+<div class="container">
+    <div class="section">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Nuevo discursante</span>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Nombre" id="nombre" type="text" class="validate">
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input placeholder="Apellido" id="apellido" type="text" class="validate">
+                                <label for="apellido">Apellido</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h6>Cantidad de arreglos en el año</h6>
+                            <div class="switch">
+
+                                <label>
+                                    Ingresar manualmente
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                    Dejar que el sistema lo establezca automáticamente
+                                </label>
+
+                            </div>
+                            <form action="#">
+                                <p class="range-field">
+                                    <input type="range" id="test5" min="1" max="24"/>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="row">
+
+                            <form action="#">
+                                <p class="range-field">
+                                    <input type="range" id="test5" min="10" max="200"/>
+                                </p>
+                            </form>
+                            <form action="#">
+                                <p class="range-field">
+                                    <input type="range" id="test5" min="10" max="200"/>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <h6>Discursos preparados</h6>
+                            <div class="card">
+                                <div class="card-content">
+                                    <form action="#">
+                                        <p><input type="checkbox" id="discurso1"/> <label
+                                                for="discurso1"><strong>1</strong> - ¿Conoce usted bien a Dios?</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso2"/> <label
+                                                for="discurso2"><strong>2</strong> - ¿Sobreviviremos a los últimos días?</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso3"/> <label
+                                                for="discurso3"><strong>3</strong> - Avancemos con la organización unida
+                                            de Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso4"/> <label
+                                                for="discurso4"><strong>4</strong> - El mundo que nos rodea prueba que
+                                            Dios existe</label></p>
+                                        <p><input type="checkbox" id="discurso5"/> <label
+                                                for="discurso5"><strong>5</strong> - Ayuda práctica para las
+                                            familias</label></p>
+                                        <p><input type="checkbox" id="discurso6"/> <label
+                                                for="discurso6"><strong>6</strong> - ¿Qué aprendemos del Diluvio de los
+                                            días de Noé?</label></p>
+                                        <p><input type="checkbox" id="discurso7"/> <label
+                                                for="discurso7"><strong>7</strong> - Imitemos al “Padre de tiernas
+                                            misericordias”</label></p>
+                                        <p><input type="checkbox" id="discurso8"/> <label
+                                                for="discurso8"><strong>8</strong> - Vivamos para hacer la voluntad de
+                                            Dios, no la nuestra</label></p>
+                                        <p><input type="checkbox" id="discurso9"/> <label
+                                                for="discurso9"><strong>9</strong> - Escuchemos y pongamos en práctica
+                                            la Palabra de Dios</label></p>
+                                        <p><input type="checkbox" id="discurso10"/> <label
+                                                for="discurso10"><strong>10</strong> - Seamos honrados en todo</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso11"/> <label
+                                                for="discurso11"><strong>11</strong> - Imitemos a Jesús, y no seamos
+                                            parte del mundo</label></p>
+                                        <p><input type="checkbox" id="discurso12"/> <label
+                                                for="discurso12"><strong>12</strong> - A Dios le importa cómo vemos la
+                                            autoridad</label></p>
+                                        <p><input type="checkbox" id="discurso13"/> <label
+                                                for="discurso13"><strong>13</strong> - ¿Cómo ve Dios el sexo y el
+                                            matrimonio?</label></p>
+                                        <p><input type="checkbox" id="discurso14"/> <label
+                                                for="discurso14"><strong>14</strong> - Un pueblo limpio da gloria a
+                                            Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso15"/> <label
+                                                for="discurso15"><strong>15</strong> - “Obremos lo que es bueno para con
+                                            todos”</label></p>
+                                        <p><input type="checkbox" id="discurso16"/> <label
+                                                for="discurso16"><strong>16</strong> - Fortalezcamos nuestra amistad con
+                                            Dios</label></p>
+                                        <p><input type="checkbox" id="discurso17"/> <label
+                                                for="discurso17"><strong>17</strong> - Que todo cuanto tengamos
+                                            glorifique a Dios</label></p>
+                                        <p><input type="checkbox" id="discurso18"/> <label
+                                                for="discurso18"><strong>18</strong> - ¿Realmente hace usted de Jehová
+                                            su plaza fuerte?</label></p>
+                                        <p><input type="checkbox" id="discurso19"/> <label
+                                                for="discurso19"><strong>19</strong> - Su futuro... ¿cómo puede saberse?</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso20"/> <label
+                                                for="discurso20"><strong>20</strong> - ¿Es tiempo de que Dios gobierne
+                                            el mundo?</label></p>
+                                        <p><input type="checkbox" id="discurso21"/> <label
+                                                for="discurso21"><strong>21</strong> - ¿Cómo puede usted colaborar con
+                                            el Reino de Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso22"/> <label
+                                                for="discurso22"><strong>22</strong> - ¿Está usted contento con las
+                                            provisiones de Jehová?</label></p>
+                                        <p><input type="checkbox" id="discurso23"/> <label
+                                                for="discurso23"><strong>23</strong> - La vida sí tiene
+                                            propósito</label></p>
+                                        <p><input type="checkbox" id="discurso24"/> <label
+                                                for="discurso24"><strong>24</strong> - Lo que puede hacer por nosotros
+                                            la gobernación de Dios</label></p>
+                                        <p><input type="checkbox" id="discurso25"/> <label
+                                                for="discurso25"><strong>25</strong> - Resistamos el espíritu del mundo</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso26"/> <label
+                                                for="discurso26"><strong>26</strong> - ¿Lo considera Dios a usted
+                                            personalmente importante?</label></p>
+                                        <p><input type="checkbox" id="discurso27"/> <label
+                                                for="discurso27"><strong>27</strong> - Cómo iniciar bien el
+                                            matrimonio</label></p>
+                                        <p><input type="checkbox" id="discurso28"/> <label
+                                                for="discurso28"><strong>28</strong> - Muestre respeto y amor en su
+                                            matrimonio</label></p>
+                                        <p><input type="checkbox" id="discurso29"/> <label
+                                                for="discurso29"><strong>29</strong> - Responsabilidades y galardones de
+                                            los padres</label></p>
+                                        <p><input type="checkbox" id="discurso30"/> <label
+                                                for="discurso30"><strong>30</strong> - La comunicación en la familia y
+                                            con Dios</label></p>
+                                        <p><input type="checkbox" id="discurso31"/> <label
+                                                for="discurso31"><strong>31</strong> - ¿Cómo se puede ser feliz a pesar
+                                            de tener hambre?</label></p>
+                                        <p><input type="checkbox" id="discurso32"/> <label
+                                                for="discurso32"><strong>32</strong> - Cómo enfrentarse a las
+                                            inquietudes de la vida</label></p>
+                                        <p><input type="checkbox" id="discurso33"/> <label
+                                                for="discurso33"><strong>33</strong> - ¿Qué hay tras el espíritu de
+                                            rebelión?</label></p>
+                                        <p><input type="checkbox" id="discurso34"/> <label
+                                                for="discurso34"><strong>34</strong> - ¿Está usted “marcado” para
+                                            sobrevivir?</label></p>
+                                        <p><input type="checkbox" id="discurso35"/> <label
+                                                for="discurso35"><strong>35</strong> - ¿Puede usted vivir para siempre?
+                                            ¿Lo logrará?</label></p>
+                                        <p><input type="checkbox" id="discurso36"/> <label
+                                                for="discurso36"><strong>36</strong> - ¿Es esta vida todo cuanto
+                                            hay?</label></p>
+                                        <p><input type="checkbox" id="discurso37"/> <label
+                                                for="discurso37"><strong>37</strong> - ¿Por qué andar en el camino de
+                                            Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso38"/> <label
+                                                for="discurso38"><strong>38</strong> - Obren prudentemente a medida que
+                                            se acerca el fin</label></p>
+                                        <p><input type="checkbox" id="discurso39"/> <label
+                                                for="discurso39"><strong>39</strong> - ¡Seguros de la victoria
+                                            divina!</label></p>
+                                        <p><input type="checkbox" id="discurso40"/> <label
+                                                for="discurso40"><strong>40</strong> - Lo que encierra el futuro cercano</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso41"/> <label
+                                                for="discurso41"><strong>41</strong> - “Esténse quietos y vean la
+                                            salvación de Jehová”</label></p>
+                                        <p><input type="checkbox" id="discurso42"/> <label
+                                                for="discurso42"><strong>42</strong> - Cómo le afecta a usted el Reino
+                                            de Dios</label></p>
+                                        <p><input type="checkbox" id="discurso43"/> <label
+                                                for="discurso43"><strong>43</strong> - ¿Cumple usted con los requisitos
+                                            de Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso44"/> <label
+                                                for="discurso44"><strong>44</strong> - Siga buscando el Reino de
+                                            Dios</label></p>
+                                        <p><input type="checkbox" id="discurso45"/> <label
+                                                for="discurso45"><strong>45</strong> - Siga el camino a la vida</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso46"/> <label
+                                                for="discurso46"><strong>46</strong> - Mantenga firme su confianza hasta
+                                            el fin</label></p>
+                                        <p><input type="checkbox" id="discurso47"/> <label
+                                                for="discurso47"><strong>47</strong> - ‘Tenga fe en las buenas
+                                            nuevas’</label></p>
+                                        <p><input type="checkbox" id="discurso48"/> <label
+                                                for="discurso48"><strong>48</strong> - La prueba de mantener lealtad
+                                            cristiana</label></p>
+                                        <p><input type="checkbox" id="discurso49"/> <label
+                                                for="discurso49"><strong>49</strong> - Una Tierra limpia: ¿vivirá usted
+                                            para verla?</label></p>
+                                        <p><input type="checkbox" id="discurso50"/> <label
+                                                for="discurso50"><strong>50</strong> - ¿Cómo tomará usted sus
+                                            decisiones?</label></p>
+                                        <p><input type="checkbox" id="discurso51"/> <label
+                                                for="discurso51"><strong>51</strong> - ¿Está transformando la verdad su
+                                            vida?</label></p>
+                                        <p><input type="checkbox" id="discurso52"/> <label
+                                                for="discurso52"><strong>52</strong> - ¿Quién es su Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso53"/> <label
+                                                for="discurso53"><strong>53</strong> - ¿Concuerda su forma de pensar con
+                                            la de Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso54"/> <label
+                                                for="discurso54"><strong>54</strong> - Edifique su fe en el Hacedor del
+                                            hombre</label></p>
+                                        <p><input type="checkbox" id="discurso55"/> <label
+                                                for="discurso55"><strong>55</strong> - ¿Qué clase de nombre se está
+                                            haciendo con Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso56"/> <label
+                                                for="discurso56"><strong>56</strong> - Hacia el nuevo mundo bajo el
+                                            acaudillamiento de Cristo</label></p>
+                                        <p><input type="checkbox" id="discurso57"/> <label
+                                                for="discurso57"><strong>57</strong> - Aguantemos la persecución</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso58"/> <label
+                                                for="discurso58"><strong>58</strong> - ¿Cómo debemos servir a
+                                            Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso59"/> <label
+                                                for="discurso59"><strong>59</strong> - Se siega lo que se
+                                            siembra</label></p>
+                                        <p><input type="checkbox" id="discurso60"/> <label
+                                                for="discurso60"><strong>60</strong> - ¿Qué propósito tiene su
+                                            vida?</label></p>
+                                        <p><input type="checkbox" id="discurso61"/> <label
+                                                for="discurso61"><strong>61</strong> - ¿En las promesas de quién confía
+                                            usted?</label></p>
+                                        <p><input type="checkbox" id="discurso62"/> <label
+                                                for="discurso62"><strong>62</strong> - El único remedio para la
+                                            humanidad enferma</label></p>
+                                        <p><input type="checkbox" id="discurso63"/> <label
+                                                for="discurso63"><strong>63</strong> - ¿Tiene usted espíritu
+                                            evangelizador?</label></p>
+                                        <p><input type="checkbox" id="discurso64"/> <label
+                                                for="discurso64"><strong>64</strong> - ¿Amadores del placer, o amadores
+                                            de Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso65"/> <label
+                                                for="discurso65"><strong>65</strong> - ¿Cómo podemos ser pacíficos en un
+                                            mundo violento?</label></p>
+                                        <p><input type="checkbox" id="discurso66"/> <label
+                                                for="discurso66"><strong>66</strong> - Trabaje como esclavo para el amo
+                                            de la siega</label></p>
+                                        <p><input type="checkbox" id="discurso67"/> <label
+                                                for="discurso67"><strong>67</strong> - Dedique tiempo a meditar en
+                                            asuntos espirituales</label></p>
+                                        <p><input type="checkbox" id="discurso68"/> <label
+                                                for="discurso68"><strong>68</strong> - ¿Guarda usted rencor o
+                                            perdona?</label></p>
+                                        <p><input type="checkbox" id="discurso69"/> <label
+                                                for="discurso69"><strong>69</strong> - Renovemos el espíritu de
+                                            abnegación</label></p>
+                                        <p><input type="checkbox" id="discurso70"/> <label
+                                                for="discurso70"><strong>70</strong> - Cifre su confianza en
+                                            Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso71"/> <label
+                                                for="discurso71"><strong>71</strong> - Cómo mantenerse despierto
+                                            espiritualmente</label></p>
+                                        <p><input type="checkbox" id="discurso72"/> <label
+                                                for="discurso72"><strong>72</strong> - El amor identifica a la
+                                            congregación cristiana verdadera</label></p>
+                                        <p><input type="checkbox" id="discurso73"/> <label
+                                                for="discurso73"><strong>73</strong> - Adquiera un corazón de sabiduría</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso74"/> <label
+                                                for="discurso74"><strong>74</strong> - Los ojos de Jehová están sobre
+                                            nosotros</label></p>
+                                        <p><input type="checkbox" id="discurso75"/> <label
+                                                for="discurso75"><strong>75</strong> - ¿Reconoce usted la soberanía de
+                                            Jehová en su vida personal?</label></p>
+                                        <p><input type="checkbox" id="discurso76"/> <label
+                                                for="discurso76"><strong>76</strong> - ¿Pueden los principios bíblicos
+                                            ayudarnos a afrontar los problemas de nuestro tiempo?</label></p>
+                                        <p><input type="checkbox" id="discurso77"/> <label
+                                                for="discurso77"><strong>77</strong> - Siga la senda de la hospitalidad</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso78"/> <label
+                                                for="discurso78"><strong>78</strong> - Sirva a Jehová con corazón gozoso</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso79"/> <label
+                                                for="discurso79"><strong>79</strong> - La amistad con Dios o la amistad
+                                            con el mundo: ¿cuál escogerá usted?</label></p>
+                                        <p><input type="checkbox" id="discurso80"/> <label
+                                                for="discurso80"><strong>80</strong> - ¿Cifra usted su esperanza en la
+                                            ciencia, o en la Biblia?</label></p>
+                                        <p><input type="checkbox" id="discurso81"/> <label
+                                                for="discurso81"><strong>81</strong> - ¿Quiénes llenan los requisitos
+                                            para ser ministros de Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso82"/> <label
+                                                for="discurso82"><strong>82</strong> - Jehová y Cristo: ¿son ellos parte
+                                            de una trinidad?</label></p>
+                                        <p><input type="checkbox" id="discurso83"/> <label
+                                                for="discurso83"><strong>83</strong> - El tiempo de juicio para la
+                                            religión</label></p>
+                                        <p><input type="checkbox" id="discurso84"/> <label
+                                                for="discurso84"><strong>84</strong> - ¿Escapará usted de lo que le
+                                            espera a este mundo?</label></p>
+                                        <p><input type="checkbox" id="discurso85"/> <label
+                                                for="discurso85"><strong>85</strong> - Buenas nuevas en un mundo
+                                            violento</label></p>
+                                        <p><input type="checkbox" id="discurso86"/> <label
+                                                for="discurso86"><strong>86</strong> - Las oraciones que Dios
+                                            escucha</label></p>
+                                        <p><input type="checkbox" id="discurso87"/> <label
+                                                for="discurso87"><strong>87</strong> - ¿Qué relación tiene usted con
+                                            Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso88"/> <label
+                                                for="discurso88"><strong>88</strong> - ¿Por qué regir su vida por las
+                                            normas bíblicas?</label></p>
+                                        <p><input type="checkbox" id="discurso89"/> <label
+                                                for="discurso89"><strong>89</strong> - ¡Venga, el que tenga sed de la
+                                            verdad!</label></p>
+                                        <p><input type="checkbox" id="discurso90"/> <label
+                                                for="discurso90"><strong>90</strong> - ¡Esfuércese por lo que realmente
+                                            es vida!</label></p>
+                                        <p><input type="checkbox" id="discurso91"/> <label
+                                                for="discurso91"><strong>91</strong> - La presencia y la gobernación del
+                                            Mesías</label></p>
+                                        <p><input type="checkbox" id="discurso92"/> <label
+                                                for="discurso92"><strong>92</strong> - El papel de la religión en los
+                                            asuntos del mundo</label></p>
+                                        <p><input type="checkbox" id="discurso93"/> <label
+                                                for="discurso93"><strong>93</strong> - ¿Es Dios el causante de los
+                                            desastres naturales?</label></p>
+                                        <p><input type="checkbox" id="discurso94"/> <label
+                                                for="discurso94"><strong>94</strong> - La religión verdadera satisface
+                                            las necesidades de la sociedad humana</label></p>
+                                        <p><input type="checkbox" id="discurso95"/> <label
+                                                for="discurso95"><strong>95</strong> - La Biblia ante las prácticas
+                                            espiritistas</label></p>
+                                        <p><input type="checkbox" id="discurso96"/> <label
+                                                for="discurso96"><strong>96</strong> - El fin de la religión falsa está
+                                            cerca</label></p>
+                                        <p><input type="checkbox" id="discurso97"/> <label
+                                                for="discurso97"><strong>97</strong> - Permanezcamos sin culpa en medio
+                                            de una generación torcida</label></p>
+                                        <p><input type="checkbox" id="discurso98"/> <label
+                                                for="discurso98"><strong>98</strong> - “La escena de este mundo está
+                                            cambiando”</label></p>
+                                        <p><input type="checkbox" id="discurso99"/> <label
+                                                for="discurso99"><strong>99</strong> - Por qué se puede confiar en la
+                                            Biblia</label></p>
+                                        <p><input type="checkbox" id="discurso100"/> <label for="discurso100"><strong>100</strong>
+                                            - La amistad verdadera con Dios y con el prójimo</label></p>
+                                        <p><input type="checkbox" id="discurso101"/> <label for="discurso101"><strong>101</strong>
+                                            - Jehová, el Magnífico Creador</label></p>
+                                        <p><input type="checkbox" id="discurso102"/> <label for="discurso102"><strong>102</strong>
+                                            - Prestemos atención a la Palabra profética</label></p>
+                                        <p><input type="checkbox" id="discurso103"/> <label for="discurso103"><strong>103</strong>
+                                            - Usted puede experimentar gozo al servir a Dios</label></p>
+                                        <p><input type="checkbox" id="discurso104"/> <label for="discurso104"><strong>104</strong>
+                                            - Padres, ¿están edificando con materiales incombustibles?</label></p>
+                                        <p><input type="checkbox" id="discurso105"/> <label for="discurso105"><strong>105</strong>
+                                            - Cómo obtener consuelo en toda tribulación</label></p>
+                                        <p><input type="checkbox" id="discurso106"/> <label for="discurso106"><strong>106</strong>
+                                            - Dios dará su merecido a los que arruinan la Tierra</label></p>
+                                        <p><input type="checkbox" id="discurso107"/> <label for="discurso107"><strong>107</strong>
+                                            - Mantengamos una buena conciencia en un mundo pecador</label></p>
+                                        <p><input type="checkbox" id="discurso108"/> <label for="discurso108"><strong>108</strong>
+                                            - Superemos el temor al futuro</label></p>
+                                        <p><input type="checkbox" id="discurso109"/> <label for="discurso109"><strong>109</strong>
+                                            - El Reino de Dios está cerca</label></p>
+                                        <p><input type="checkbox" id="discurso110"/> <label for="discurso110"><strong>110</strong>
+                                            - La familia feliz es la que pone a Dios en primer lugar</label></p>
+                                        <p><input type="checkbox" id="discurso111"/> <label for="discurso111"><strong>111</strong>
+                                            - ¿Qué logra la curación de las naciones?</label></p>
+                                        <p><input type="checkbox" id="discurso112"/> <label for="discurso112"><strong>112</strong>
+                                            - Cómo mostrar amor en un mundo desaforado</label></p>
+                                        <p><input type="checkbox" id="discurso113"/> <label for="discurso113"><strong>113</strong>
+                                            - ¿Cómo pueden los jóvenes hacer frente a la crisis actual?</label></p>
+                                        <p><input type="checkbox" id="discurso114"/> <label for="discurso114"><strong>114</strong>
+                                            - Aprecie las maravillas de la creación de Dios</label></p>
+                                        <p><input type="checkbox" id="discurso115"/> <label for="discurso115"><strong>115</strong>
+                                            - Cómo protegernos de las trampas de Satanás</label></p>
+                                        <p><input type="checkbox" id="discurso116"/> <label for="discurso116"><strong>116</strong>
+                                            - Sea sabio al elegir sus compañías</label></p>
+                                        <p><input type="checkbox" id="discurso117"/> <label for="discurso117"><strong>117</strong>
+                                            - Cómo vencer el mal con el bien</label></p>
+                                        <p><input type="checkbox" id="discurso118"/> <label for="discurso118"><strong>118</strong>
+                                            - Veamos a los jóvenes como los ve Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso119"/> <label for="discurso119"><strong>119</strong>
+                                            - Por qué es provechoso que los cristianos se mantengan separados del mundo</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso120"/> <label for="discurso120"><strong>120</strong>
+                                            - Razones para someterse hoy al gobierno de Dios</label></p>
+                                        <p><input type="checkbox" id="discurso121"/> <label for="discurso121"><strong>121</strong>
+                                            - Una hermandad mundial rescatada de la calamidad</label></p>
+                                        <p><input type="checkbox" id="discurso122"/> <label for="discurso122"><strong>122</strong>
+                                            - ¿De qué fuente vendrá la paz mundial?</label></p>
+                                        <p><input type="checkbox" id="discurso123"/> <label for="discurso123"><strong>123</strong>
+                                            - Por qué deben ser diferentes los cristianos</label></p>
+                                        <p><input type="checkbox" id="discurso124"/> <label for="discurso124"><strong>124</strong>
+                                            - Razones para confiar en el origen divino de la Biblia</label></p>
+                                        <p><input type="checkbox" id="discurso125"/> <label for="discurso125"><strong>125</strong>
+                                            - Por qué necesita la humanidad un rescate</label></p>
+                                        <p><input type="checkbox" id="discurso126"/> <label for="discurso126"><strong>126</strong>
+                                            - ¿Quién puede ser salvo?</label></p>
+                                        <p><input type="checkbox" id="discurso127"/> <label for="discurso127"><strong>127</strong>
+                                            - ¿Qué nos sucede cuando morimos?</label></p>
+                                        <p><input type="checkbox" id="discurso128"/> <label for="discurso128"><strong>128</strong>
+                                            - ¿Es el infierno realmente un lugar de tormento?</label></p>
+                                        <p><input type="checkbox" id="discurso129"/> <label for="discurso129"><strong>129</strong>
+                                            - ¿Es la Trinidad una enseñnza bíblica?</label></p>
+                                        <p><input type="checkbox" id="discurso130"/> <label for="discurso130"><strong>130</strong>
+                                            - La Tierra existirá para siempre</label></p>
+                                        <p><input type="checkbox" id="discurso131"/> <label for="discurso131"><strong>131</strong>
+                                            - ¿De verdad existe el Diablo?</label></p>
+                                        <p><input type="checkbox" id="discurso132"/> <label for="discurso132"><strong>132</strong>
+                                            - La resurrección: una victoria sobre la muerte</label></p>
+                                        <p><input type="checkbox" id="discurso133"/> <label for="discurso133"><strong>133</strong>
+                                            - ¿Importa lo que creemos sobre el origen de los seres humanos?</label></p>
+                                        <p><input type="checkbox" id="discurso134"/> <label for="discurso134"><strong>134</strong>
+                                            - ¿Deben guardar los cristianos un día de descanso?</label></p>
+                                        <p><input type="checkbox" id="discurso135"/> <label for="discurso135"><strong>135</strong>
+                                            - La santidad de la vida y la sangre</label></p>
+                                        <p><input type="checkbox" id="discurso136"/> <label for="discurso136"><strong>136</strong>
+                                            - ¿Aprueba Dios las imágenes en la adoración?</label></p>
+                                        <p><input type="checkbox" id="discurso137"/> <label for="discurso137"><strong>137</strong>
+                                            - ¿De verdad tuvieron lugar los milagros de la Biblia?</label></p>
+                                        <p><input type="checkbox" id="discurso138"/> <label for="discurso138"><strong>138</strong>
+                                            - Vivamos con buen juicio en un mundo perverso</label></p>
+                                        <p><input type="checkbox" id="discurso139"/> <label for="discurso139"><strong>139</strong>
+                                            - Sabiduría piadosa en un mundo de orientación científica</label></p>
+                                        <p><input type="checkbox" id="discurso140"/> <label for="discurso140"><strong>140</strong>
+                                            - Jesucristo: el nuevo gobernante de la Tierra</label></p>
+                                        <p><input type="checkbox" id="discurso141"/> <label for="discurso141"><strong>141</strong>
+                                            - ¿Cuándo dejará de gemir la creación humana?</label></p>
+                                        <p><input type="checkbox" id="discurso142"/> <label for="discurso142"><strong>142</strong>
+                                            - Por qué refugiarse en Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso143"/> <label for="discurso143"><strong>143</strong>
+                                            - Confiemos en el Dios de todo consuelo</label></p>
+                                        <p><input type="checkbox" id="discurso144"/> <label for="discurso144"><strong>144</strong>
+                                            - Una congregación leal bajo la dirección de Cristo</label></p>
+                                        <p><input type="checkbox" id="discurso145"/> <label for="discurso145"><strong>145</strong>
+                                            - ¿Quién es como Jehová nuestro Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso146"/> <label for="discurso146"><strong>146</strong>
+                                            - Utilice la educación para alabar a Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso147"/> <label for="discurso147"><strong>147</strong>
+                                            - Confíe en el poder salvador de Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso148"/> <label for="discurso148"><strong>148</strong>
+                                            - ¿Ve usted la vida como la ve Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso149"/> <label for="discurso149"><strong>149</strong>
+                                            - ¿Anda usted con Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso150"/> <label for="discurso150"><strong>150</strong>
+                                            - ¿Hasta qué grado es Dios real para usted?</label></p>
+                                        <p><input type="checkbox" id="discurso151"/> <label for="discurso151"><strong>151</strong>
+                                            - Jehová es “una altura segura” para su pueblo</label></p>
+                                        <p><input type="checkbox" id="discurso152"/> <label for="discurso152"><strong>152</strong>
+                                            - ¿Cuándo y por qué vendrá el verdadero Armagedón?</label></p>
+                                        <p><input type="checkbox" id="discurso153"/> <label for="discurso153"><strong>153</strong>
+                                            - Tengamos muy presente el día “inspirador de temor”</label></p>
+                                        <p><input type="checkbox" id="discurso154"/> <label for="discurso154"><strong>154</strong>
+                                            - El gobierno del hombre, pesado en la balanza</label></p>
+                                        <p><input type="checkbox" id="discurso155"/> <label for="discurso155"><strong>155</strong>
+                                            - ¿Ha llegado la hora del juicio de Babilonia?</label></p>
+                                        <p><input type="checkbox" id="discurso156"/> <label for="discurso156"><strong>156</strong>
+                                            - ¿Es el Día del Juicio un tiempo de temor, o de esperanza?</label></p>
+                                        <p><input type="checkbox" id="discurso157"/> <label for="discurso157"><strong>157</strong>
+                                            - Cómo adornan los cristianos la enseñnza divina</label></p>
+                                        <p><input type="checkbox" id="discurso158"/> <label for="discurso158"><strong>158</strong>
+                                            - Seamos valerosos y confiemos en Jehová</label></p>
+                                        <p><input type="checkbox" id="discurso159"/> <label for="discurso159"><strong>159</strong>
+                                            - Cómo encontrar seguridad en un mundo peligroso</label></p>
+                                        <p><input type="checkbox" id="discurso160"/> <label for="discurso160"><strong>160</strong>
+                                            - Protejamos nuestra identidad cristiana</label></p>
+                                        <p><input type="checkbox" id="discurso161"/> <label for="discurso161"><strong>161</strong>
+                                            - ¿Por qué sufrió y murió Jesús?</label></p>
+                                        <p><input type="checkbox" id="discurso162"/> <label for="discurso162"><strong>162</strong>
+                                            - Liberados de un mundo de oscuridad</label></p>
+                                        <p><input type="checkbox" id="discurso163"/> <label for="discurso163"><strong>163</strong>
+                                            - ¿Por qué temer al Dios verdadero?</label></p>
+                                        <p><input type="checkbox" id="discurso164"/> <label for="discurso164"><strong>164</strong>
+                                            - ¿Sigue Dios ejerciendo la soberanía sobre la Tierra?</label></p>
+                                        <p><input type="checkbox" id="discurso165"/> <label for="discurso165"><strong>165</strong>
+                                            - ¿A qué valores concedemos más importancia?</label></p>
+                                        <p><input type="checkbox" id="discurso166"/> <label for="discurso166"><strong>166</strong>
+                                            - Afrontemos el futuro con fe y valor</label></p>
+                                        <p><input type="checkbox" id="discurso167"/> <label for="discurso167"><strong>167</strong>
+                                            - Actuemos con sabiduría en este mundo insensato</label></p>
+                                        <p><input type="checkbox" id="discurso168"/> <label for="discurso168"><strong>168</strong>
+                                            - Cómo sentirse seguro en este mundo turbulento</label></p>
+                                        <p><input type="checkbox" id="discurso169"/> <label for="discurso169"><strong>169</strong>
+                                            - ¿Por qué debemos guiarnos por la Biblia?</label></p>
+                                        <p><input type="checkbox" id="discurso170"/> <label for="discurso170"><strong>170</strong>
+                                            - ¿Quién es el único que puede gobernar bien a la humanidad?</label></p>
+                                        <p><input type="checkbox" id="discurso171"/> <label for="discurso171"><strong>171</strong>
+                                            - Usted puede disfrutar de la vida en paz ahora y para siempre</label></p>
+                                        <p><input type="checkbox" id="discurso172"/> <label for="discurso172"><strong>172</strong>
+                                            - ¿Qué posición tenemos ante Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso173"/> <label for="discurso173"><strong>173</strong>
+                                            - ¿Le importa a Dios qué religión tengamos?</label></p>
+                                        <p><input type="checkbox" id="discurso174"/> <label for="discurso174"><strong>174</strong>
+                                            - ¿Quién será digno de entrar en el nuevo mundo de Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso175"/> <label for="discurso175"><strong>175</strong>
+                                            - ¿Qué pruebas demuestran la autenticidad de la Biblia?</label></p>
+                                        <p><input type="checkbox" id="discurso176"/> <label for="discurso176"><strong>176</strong>
+                                            - ¿Cuándo tendremos verdadera paz y seguridad?</label></p>
+                                        <p><input type="checkbox" id="discurso177"/> <label for="discurso177"><strong>177</strong>
+                                            - ¿A quién podemos acudir en tiempos de angustia?</label></p>
+                                        <p><input type="checkbox" id="discurso178"/> <label for="discurso178"><strong>178</strong>
+                                            - Andemos en el camino de la integridad</label></p>
+                                        <p><input type="checkbox" id="discurso179"/> <label for="discurso179"><strong>179</strong>
+                                            - Rechace las fantasías mundanales; busque las realidades del Reino</label>
+                                        </p>
+                                        <p><input type="checkbox" id="discurso180"/> <label for="discurso180"><strong>180</strong>
+                                            - ¿Por qué debe ser real para nosotros la esperanza de la
+                                            resurrección?</label></p>
+                                        <p><input type="checkbox" id="discurso181"/> <label for="discurso181"><strong>181</strong>
+                                            - ¿Faltará menos de lo que usted cree?</label></p>
+                                        <p><input type="checkbox" id="discurso182"/> <label for="discurso182"><strong>182</strong>
+                                            - ¿Qué está haciendo por nosotros el Reino de Dios?</label></p>
+                                        <p><input type="checkbox" id="discurso183"/> <label for="discurso183"><strong>183</strong>
+                                            - Alejemos la mirada de lo que es in útil</label></p>
+                                        <p><input type="checkbox" id="discurso184"/> <label for="discurso184"><strong>184</strong>
+                                            - ¿Es la muerte el final de todo?</label></p>
+                                        <p><input type="checkbox" id="discurso185"/> <label for="discurso185"><strong>185</strong>
+                                            - ¿Influye la verdad en su vida?</label></p>
+                                        <p><input type="checkbox" id="discurso186"/> <label for="discurso186"><strong>186</strong>
+                                            - Unidos al feliz pueblo de Dios</label></p>
+                                        <p><input type="checkbox" id="discurso187"/> <label for="discurso187"><strong>187</strong>
+                                            - ¿Cómo es posible que un Dios de amor permita la maldad?</label></p>
+                                        <p><input type="checkbox" id="discurso188"/> <label for="discurso188"><strong>188</strong>
+                                            - ¿Ha depositado su confianza en Jehová?</label></p>
+                                        <p><input type="checkbox" id="discurso189"/> <label for="discurso189"><strong>189</strong>
+                                            - Andar con Dios nos beneficia ahora y para siempre</label></p>
+                                        <p><input type="checkbox" id="discurso190"/> <label for="discurso190"><strong>190</strong>
+                                            - Una familia unida y feliz para siempre</label></p>
+                                        <p><input type="checkbox" id="discurso191"/> <label for="discurso191"><strong>191</strong>
+                                            - Cómo vencen al mundo la fe y el amor</label></p>
+                                        <p><input type="checkbox" id="discurso192"/> <label for="discurso192"><strong>192</strong>
+                                            - ¿Anda usted por el camino que lleva a la vida eterna?</label></p>
+                                        <p><input type="checkbox" id="discurso193"/> <label for="discurso193"><strong>193</strong>
+                                            - Pronto se nos librará de la angustia mundial</label></p>
+                                        <p><input type="checkbox" id="discurso194"/> <label for="discurso194"><strong>194</strong>
+                                            - Cómo nos beneficia la sabiduría divina</label></p>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                This is an inline input field:
+                                <div class="input-field inline">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card-action">
+                <a href="#">Ver agenda completa</a>
+                <a href="#">Nuevo arreglo</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+
+</body>
+</html>
