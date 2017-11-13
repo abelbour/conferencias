@@ -1,0 +1,69 @@
+
+<div class="custom-modal" >
+
+    <!-- Modal Structure -->
+    <div class="card brown lighten-5" style="margin: auto" >
+        <a class="right padding" href="#!/"><i class="material-icons">&#xE5CD;</i></a>
+        <div class="card-content">
+
+            <div class="text-entra" data-ng-if="arreglo.tipo == 'entra'">
+
+
+                <span class="card-title">
+
+                    <span class="left cyan-text darken-4"><i class="material-icons">priority_high</i><i class="material-icons ">home</i><i class="material-icons cyan-text darken-4">keyboard_arrow_left</i></span>
+                Discurso público por confirmar
+
+                </span>
+
+
+                <p>El arreglo solicitado todavía no ha sido confirmado por la congregación de orígen.</p>
+                <p>Puede esperar a que el coordinador de los arreglos lo confirme o comunicarse con él para que lo haga.</p>
+
+            </div>
+
+            <div class="text-sale" data-ng-if="arreglo.tipo == 'sale'">
+              <span class="card-title">
+
+                  Solicitud de arreglo por confirmar
+                  <span class="orange-text darken-4 left">
+                      <span class="left"><i class="material-icons">priority_high</i><i class="material-icons orange-text darken-4">home</i><i class="material-icons orange-text darken-4">keyboard_arrow_right</i></span>
+                  </span>
+
+              </span>
+
+
+                <p>El arreglo solicitado a la congregación todavía no ha sido confirmado.</p>
+                <p>Por favor, confirme o rechace la solicitud cuanto antes.</p>
+            </div>
+
+
+            <ul>
+                <li><i class="material-icons tiny left">event</i>{{arreglo.fecha}}</li>
+                <li><i class="material-icons tiny left">person</i><strong>{{arreglo.discursante}}</strong></li>
+                <li><i class="material-icons tiny left">home</i>{{arreglo.congregacion}}</li>
+                <li><i class="material-icons tiny left">insert_drive_file</i>{{arreglo.conferencia}}</li>
+            </ul>
+        </div>
+
+        <div class="entra-action" data-ng-if="arreglo.tipo == 'entra'">
+            <div class="card-action" >
+                <a href="#">Cancelar</a>
+            </div>
+        </div>
+
+        <div class="sale-action" data-ng-if="arreglo.tipo == 'sale'">
+            <div class="card-action" >
+
+                <a href="#">Rechazar</a>
+                <a href="#">Confirmar</a>
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>

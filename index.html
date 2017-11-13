@@ -41,6 +41,10 @@
                     templateUrl : "views/discursantes.html",
                     controller : "discursantesCtrl"
                 })
+                .when("/arreglos/:id", {
+                    templateUrl : "views/detalle-arreglo.html",
+                    controller : "detalleArregloCtrl"
+                })
         });
 
     </script>
@@ -50,6 +54,7 @@
     <script src="js/controllers/homeController.js"></script>
     <script src="js/controllers/loginController.js"></script>
     <script src="js/controllers/discursantesCtrl.js"></script>
+    <script src="js/controllers/detalleArregloController.js"></script>
     <!-- -->
 
     <!-- Directivas -->
