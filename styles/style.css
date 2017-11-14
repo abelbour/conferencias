@@ -27,7 +27,7 @@
 }
 
 .material-icons {
-    text-rendering: unset;
+    text-rendering: auto;
     -webkit-font-feature-settings: 'liga';
     -moz-font-feature-settings: 'liga';
     font-feature-settings: 'liga';
