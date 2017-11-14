@@ -25,3 +25,10 @@
 {
     padding:10px;
 }
+
+.material-icons {
+    text-rendering: unset;
+    -webkit-font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+}
